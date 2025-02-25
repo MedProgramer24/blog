@@ -59,16 +59,16 @@ export default function Register() {
 
   return (
     <>
-      <section className="bg-light">
-        <div className="container d-flex flex-column align-items-center justify-content-center min-vh-100 py-4">
+      <section className="bg-black">
+        <div className="container d-flex flex-column align-items-center justify-content-center py-4">
           <a href="#" className="mb-4 text-dark text-decoration-none d-flex align-items-center">
             <img className="me-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo" width="32" height="32" />
-            <Link to={'/'}> <span className="h4 mb-0 fw-bold">The Code Journal</span></Link> 
+            <Link to={'/'}> <span className="h4 mb-0 fw-bold">the code journal</span></Link> 
           </a>
-          <div className="card shadow-sm w-100" style={{ maxWidth: '400px' }}>
+          <div className="card shadow-sm w-100 bg-dark" style={{ maxWidth: '400px' }}>
             <div className="card-body p-4">
               <h1 className="h5  fw-bold text-dark">Create an account</h1>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} style={{marginTop:"0",display:"block"}}>
                 <div className=" text-center">
                   <label htmlFor="image" className="form-label">Profile Picture</label>
                   <div className="d-flex justify-content-center ">

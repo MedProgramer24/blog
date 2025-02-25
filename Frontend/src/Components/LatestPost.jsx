@@ -36,7 +36,7 @@ export default function LatestPost() {
 
     return (
         <>
-            <div className="container">
+            <div className="container" id='posts'>
                 <div className='mb-5 text-center'>
                     <h2 className="fw-bold fs-1 text-white">Recent Posts</h2>
                 </div>

@@ -60,9 +60,9 @@ setName(user.FullName)
   };
 
   return (
-    <div className="profile-container">
+    <div className="profile-container" style={{border:"1px solid white"}}>
       <h1 className="profile-title">Update Profile</h1>
-      <form className="profile-form" onSubmit={handleUpdateProfile}>
+      <form className="profile-form" onSubmit={handleUpdateProfile} style={{marginTop:"0", gap:"15px"}}>
         <div className="profile-image-section">
           <label htmlFor="profileImage" className="profile-image-label">
             {profileImage ? (

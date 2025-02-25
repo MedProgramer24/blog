@@ -11,6 +11,7 @@ import User from './Pages/Admin/User'
 import AllPost from './Pages/AllPost'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
+import Privacy from './Components/Privacy'
 import {Provider} from 'react-redux'
 import { peristor, store } from './redux/store'
 import { PersistGate } from 'redux-persist/integration/react'
@@ -25,6 +26,7 @@ export default function App() {
       <PersistGate loading={null} persistor={peristor}>
    <Routes>
     <Route path='/' element={<UserLayout/>}>
+    <Route path="/privacy" element={<Privacy />} /> 
     <Route index element={<Home/>}/>
     <Route path='blog/:postId' element={<Blog/>}></Route>
     <Route path='/profile/:userId' element={<Profile/>}></Route>

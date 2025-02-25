@@ -30,6 +30,31 @@ app.use('/blog',BlogRoutes)
 app.use('/dashboard',DashboardRoutes)
 app.use('/comment',CommentRoutes)
 app.use('/public',PublicRoutes)
+app.post('/send-email', async (req, res) => {
+    const { name, email, message } = req.body;
+
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'your-email@gmail.com',
+            pass: 'your-password'
+        }
+    });
+
+    const mailOptions = {
+        from: email,
+        to: 'your-email@gmail.com',
+        subject: `New Contact Form Submission from ${name}`,
+        text: message
+    };
+
+    try {
+        await transporter.sendMail(mailOptions);
+        res.status(200).send("Email sent successfully!");
+    } catch (error) {
+        res.status(500).send("Error sending email.");
+    }
+});
 
 app.listen(PORT,()=>{
     console.log(`App is running on Port ${PORT}`)

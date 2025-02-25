@@ -72,11 +72,6 @@ export default function Blog() {
           
           <p className="mb-5">{singlePost && singlePost.desc}</p>
 
-          {/* <div className="bg-dark p-4 rounded mb-5">
-            <h2 className="text-white mb-4">Big Dedication</h2>
-            <p className="mb-0">Dedication is key to mastering the art of writing. As with any craft, the more you practice, the better you become. This article encourages you to write daily, seek feedback, and never stop learning. Your dedication to improving your writing skills will be rewarded with clearer, more compelling communication.</p>
-          </div> */}
-
           <hr />
 
           <h3 className="mt-5 mb-4">Leave a Comment</h3>

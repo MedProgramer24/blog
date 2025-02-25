@@ -1,0 +1,120 @@
+/* Contact US Section */
+.contact {
+    margin: 55px 0;
+}
+.about-titre{
+    color: white;
+    text-align: center;
+}
+
+.resum-contact {
+    display: grid;
+    margin-top: 67px;
+    height: 252px;
+    align-items: end;
+}
+
+.phone,
+.email,
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.phone h3,
+.email h3,
+.location h3 {
+    color: #0d6efd;
+}
+
+.phone img {
+    height: 38px;
+}
+
+.same-start {
+    margin-left: 16px;
+}
+
+.email img,
+.location img {
+    height: 38px;
+}
+
+.phone p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 5px;
+    color: white;
+}
+
+.email p,
+.location p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 5px;
+    color: white;
+}
+
+.container1 {
+    display: flex;
+    padding-left: 78px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.form {
+    margin-right: 107px;
+    margin-top: 20px;
+}
+
+form {
+    width: 338px;
+    display: grid;
+    gap: 36px;
+    margin-top: 40px;
+}
+
+form div {
+    display: grid;
+    gap: 16px;
+}
+
+form label {
+    color: #0d6efd;
+    font-size: large;
+    font-weight: bold;
+}
+
+form input {
+    padding-left: 23px;
+    font-size: medium;
+    border-color: #707070;
+    border-radius: 5px;
+    height: 36px;
+    width: 100%;
+    background-color: #3F3737;
+    color: white;
+
+}
+
+input::placeholder , textarea::placeholder {
+    color: white;
+}
+
+#feedback {
+    background-color: #3F3737;
+    color: white;
+    padding-left: 23px;
+    height: 100px;
+}
+
+.envoyer {
+    cursor: pointer;
+    width: 100px;
+    background-color: #0d6efd;
+    color: white;
+    padding-right: 16px;
+}

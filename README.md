@@ -2,7 +2,7 @@
 A simple and powerful blog application built with React and Node.js! This app allows users to view, create, update, and delete blog posts seamlessly. It comes with an admin role for restricted operations and supports image uploads for blog posts.
 
 ## 📸 Features
-CRUD Operations:
+CRUD Operations:0
 ✍️ Create, 📖 Read, 📝 Update, and ❌ Delete blog posts
 Image Upload: Add images to your blog posts effortlessly
 Admin Role: Access control to ensure only authorized users can update or delete posts
@@ -72,14 +72,14 @@ Create a .env file in the frontend folder with the following variable:
 ini
 Copy
 Edit
-REACT_APP_API_URL=http://localhost:5000
+REACT_APP_API_URL=http://localhost:5173
 Start the frontend development server:
 
 bash
 Copy
 Edit
 npm start
-Your frontend should be running at http://localhost:3000.
+Your frontend should be running at http://localhost:5173.
 
 ## 🎯 Usage
 Frontend

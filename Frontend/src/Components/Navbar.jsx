@@ -70,7 +70,7 @@ export default function Navbar() {
       <div className="d-flex align-items-center" style={{ marginRight: "29px" }}>
         {!user ? (
           <Link to="/login">
-            <button className="btn_sign mx-3">Sign in</button>
+            <button className="btn_sign mx-3" style={{backgroundColor:"#0d6efd"}}>Sign in</button>
           </Link>
         ) : (
           <div className="dropdown">
